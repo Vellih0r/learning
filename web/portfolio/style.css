@@ -1,0 +1,128 @@
+header{background-color: #e3cd7c;
+    padding: 10px;}
+main img{max-width: 100%;}
+nav{background-image: url("../other/pattern.png");
+	background-color: #ffffff;
+    padding: 20px 10px;}
+nav a{background-color: white;
+    color: black;
+    border: 2px solid #e2d58b;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    width: 80px;
+    display: inline-block;}
+nav a:hover {text-decoration: underline;
+    color:  #f0e2a3;}
+
+main{background-color: #e9dc97;
+    padding: 10px;
+	overflow: auto;}
+		
+.box{float: left;
+		width: 40%;}
+.box a{border: 3px solid #ffffff;
+		border-radius: 10px;
+		background-color: #ffffff;
+		display: inline-block;
+		margin-bottom: 10px;}
+.box a:link{color: black;
+		text-decoration: none;}
+.box a:visited{color: #ff7b00;}
+.box a:hover{background-color: #dac26a;
+			border: 3px solid #dac26a;
+            text-decoration: underline;}
+
+footer{background-color: #dac26a;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;}
+body{background-color: #f0e2a3; }
+#wrapper{margin: 0 auto;
+    width:80%;
+    border: 10px solid #e3cd7c;
+    border-radius: 20px;}
+
+#header_end{
+    border-bottom: 3px solid #e3cd7c;
+}
+
+.Buttons{ margin: 10px; font-size: 15px;
+    background-color: #b69b3b;
+    border: 0px; border-radius: 10px;
+    color: white; padding: 5px 20px 5px 20px;}
+
+#tech {font-size: 25px;}
+
+form{
+    float: left;
+    font-size: larger;  
+    width: 50%;
+}
+#fname, #lname, #email {width: 100%; height: 25px;} 
+textarea {width: 100%; height: 80px;}
+
+#right_contact{
+    float: right;
+    width: 45%;
+}
+
+#footertext{float: left; width: auto; margin: 20px;}
+#socialicons{width: auto;float: right;} 
+.fa {
+    padding: 15px;
+    font-size: 40px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 8px;
+  }
+  
+.fa:hover {opacity: 0.7;}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-instagram {
+    background: #c01e9a;
+    color: white;
+  }
+
+.fa-github {
+    background: black;
+    color: white;
+}
+
+
+.about{font-size: 25px;
+		padding: 7px;
+		}
+		
+footer{height: auto; overflow: auto;}
+
+@media only screen and (max-width: 1024px)
+{
+    body{margin: 0;}
+    #wrapper{width: auto;}
+    p{font-size: 90%;}
+}
+
+@media only screen and (max-width: 768px)
+{
+    nav {padding: 10px 5px;}
+    nav a{margin-right: 2px; width: 70px; padding: 5px;}
+	#socialicons{float: left; width: auto;}
+}
+
+@media only screen and (max-width: 600px)
+{
+	header{text-align: center; border-bottom: 2px solid white;}
+	nav{padding: 0;}
+	nav a{display: block; border-bottom: 1px solid #63acab;
+		width: auto; border-left:0; border-right: 0; 
+		text-align: center; margin-right: 0px;}
+		#socialicons{float: left; width: auto;}
+}

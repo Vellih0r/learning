@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+        form{ background-color: ghostwhite; width: 25%; border-radius: 10px; padding: 10px;}
+		label{font-style: italic;}
+        input::placeholder{color: tomato; font-family: arial; font-size: 1em;}
+	input, textarea{margin-top: 10px;}
+	textarea::placeholder{color: tomato; font-family: arial; font-size: 1em;}
+	#Buttons {margin-left: 20%;}
+    input[type="submit"],[type="reset"] {background-color: #f3e193; color: tomato; padding: 5px; font-family: Arial;}
+	</style>
+	<meta charset="UTF-8">
+	<title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Us</h2>
+        <form>
+            <label>First Name:</label><input type="text" name="fname" id="fname" placeholder="Enter your name here">
+            <br><br>
+            <label>Last Name: </label><input type="text" name="lname" id="lname" placeholder="Enter your surname here">
+            <br><br>
+            <label>E-mail:</label><input type="email" name="email" id="email" required="required" placeholder="Enter your email here">
+            <br><br>
+            <label for="comments">Comments:</label><br>
+            <textarea name="comments" id="comments" rows="4" cols="40" required="required" placeholder="Leave your comment here"></textarea><br><br>
+            <input type="submit" value="Contact" class="Buttons">
+            <input type="reset" class="Buttons">
+        </form>
+</body>
+<button onclick="history.back()">Go Back</button>
+</html>
