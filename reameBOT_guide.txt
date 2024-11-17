@@ -162,7 +162,7 @@ if __name__ == '__main__': апускает функция мейн позвол
 async def cmd_start(message: Message):
     await message.answer('Привет!')
 
-
+СОСАЛ????????????
 
 
 
