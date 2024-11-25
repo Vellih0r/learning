@@ -9,7 +9,7 @@ with open("english.txt", "r", encoding='utf8') as file:
         if current == '\n':
             continue
         if previous != current:
-            new_file.write('-'*37 + '\n')
+            new_file.write('-'*37 + '\n\n')
         new_file.write(line)
         previous = line[0]
 new_file.close()
