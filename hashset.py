@@ -72,6 +72,8 @@ class LinkedList():
             while current:
                 if current.val == val:
                     return True
+                current = current.next
+            return False
 
     def clear(self):
         self.head = None
@@ -79,7 +81,49 @@ class LinkedList():
 
 # end of linked list
 
+import hashlib
+
+# Создаем хеш-объект
+
+
+hash_object = hashlib.sha256()
+
 # start of hashset
-class HashSet:
-    def __init__(self):
-        pass
+class HashMap:
+    def __init__(self, length=100):
+        self.box = [None] * length
+        self.length = length
+        self.keys = []
+
+    def add(self, key):
+        hash = self.my_hash(key)
+        if self.box[hash] is None:
+            self.box[hash] = key
+            self.keys.append(key)
+        else:
+            print("Коллизия(занято)")
+
+    def get(self, key):
+        hash = self.my_hash(key)
+        return self.box[hash]
+
+    def display(self):
+        for i in (self.keys):
+            print(f"{i} : {self.get(i)}", end="|")
+
+    def my_hash(self, key):
+        hashh = hash(key)
+        print("Хеш-значение:", hashh, "Index: ", hashh % self.length)
+        return hashh % self.length
+    
+object = HashMap()
+object.add('cat')
+object.add('hello')
+object.add('keyy')
+object.add('keyy')
+object.add('point')
+object.add('aboba')
+object.add('hay')
+object.display()
+
+
